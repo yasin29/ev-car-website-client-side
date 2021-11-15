@@ -72,8 +72,8 @@ const Book = () => {
         >
             <DialogTitle>{"Order Placed Successfully"}</DialogTitle>
             <DialogActions>
-                <Link to="/services">
-                    <Button>Explore</Button>
+                <Link style={{ textDecoration: 'none' }} to="/services">
+                    <Button variant="contained">Explore More</Button>
                 </Link>
             </DialogActions>
         </Dialog>

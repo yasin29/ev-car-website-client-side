@@ -13,6 +13,7 @@ const Register = () => {
     const { user, registerUser, isLoading, authError } = useAuth();
     const history = useHistory();
 
+
     const handleOnBlur = e => {
         const field = e.target.name;
         const value = e.target.value;
