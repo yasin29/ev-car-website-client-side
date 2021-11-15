@@ -26,13 +26,13 @@ const AddReviews = () => {
 
     const [cars, setCars] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/cars')
+        fetch('https://dry-stream-77696.herokuapp.com/cars')
             .then(res => res.json())
             .then(data => setCars(data))
     }, [])
 
     useEffect(() => {
-        fetch(`http://localhost:5000/cars/${carId}`)
+        fetch(`https://dry-stream-77696.herokuapp.com/cars/${carId}`)
             .then(res => res.json())
             .then(data => setCar(data))
     }, [carId])
@@ -52,7 +52,7 @@ const AddReviews = () => {
             rating: rating,
             img: user.photoURL
         }
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://dry-stream-77696.herokuapp.com/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

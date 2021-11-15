@@ -87,7 +87,7 @@ const Book = () => {
     const [orderInfo, setOrderInfo] = useState(initialInfo);
     const { name, description, range, price, img } = car;
     useEffect(() => {
-        fetch(`http://localhost:5000/cars/${carId}`)
+        fetch(`https://dry-stream-77696.herokuapp.com/cars/${carId}`)
             .then(res => res.json())
             .then(data => setCar(data))
     }, [carId])
@@ -110,7 +110,7 @@ const Book = () => {
             price: price,
             status: 'pending'
         }
-        fetch('http://localhost:5000/orders', {
+        fetch('https://dry-stream-77696.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

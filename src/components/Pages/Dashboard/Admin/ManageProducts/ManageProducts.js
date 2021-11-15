@@ -20,7 +20,7 @@ const ManageProducts = () => {
     const handleClose = e => {
         if (e) {
             setOpen(false);
-            const url = `http://localhost:5000/cars/${id}`;
+            const url = `https://dry-stream-77696.herokuapp.com/cars/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -50,7 +50,7 @@ const ManageProducts = () => {
     };
 
     useEffect(() => {
-        fetch('http://localhost:5000/cars')
+        fetch('https://dry-stream-77696.herokuapp.com/cars')
             .then(res => res.json())
             .then(data => {
                 setCars(data)
@@ -63,7 +63,7 @@ const ManageProducts = () => {
     }
 
     const statusChange = (id, status) => {
-        const url = `http://localhost:5000/cars/${id}`;
+        const url = `https://dry-stream-77696.herokuapp.com/cars/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {

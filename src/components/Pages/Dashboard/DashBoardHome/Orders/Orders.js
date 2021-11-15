@@ -17,7 +17,7 @@ const Orders = () => {
     const handleClose = e => {
         if (e) {
             setOpen(false);
-            const url = `http://localhost:5000/orders/${id}`;
+            const url = `https://dry-stream-77696.herokuapp.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -47,7 +47,7 @@ const Orders = () => {
     };
 
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://dry-stream-77696.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setOrders(data))
     }, []);

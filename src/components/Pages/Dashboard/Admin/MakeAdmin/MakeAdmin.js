@@ -12,7 +12,7 @@ const MakeAdmin = () => {
     const [invalid, setInvalid] = useState(false);
 
     useEffect(() => {
-        fetch('http://localhost:5000/users')
+        fetch('https://dry-stream-77696.herokuapp.com/users')
             .then(res => res.json())
             .then(data => setAdmins(data))
     }, [success])
@@ -23,7 +23,7 @@ const MakeAdmin = () => {
 
     const handleAdminSubmit = e => {
         const user = { email }
-        fetch('http://localhost:5000/users/admin', {
+        fetch('https://dry-stream-77696.herokuapp.com/users/admin', {
             method: 'PUT',
             headers: {
                 'authorization': `bearer ${token}`,

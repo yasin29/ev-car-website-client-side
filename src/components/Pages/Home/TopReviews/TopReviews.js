@@ -14,7 +14,7 @@ const TopReviews = () => {
     const shareUrl = 'http://localhost:5000';
 
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch('https://dry-stream-77696.herokuapp.com/reviews')
             .then(res => res.json())
             .then(data => setReviews(data))
     }, []);

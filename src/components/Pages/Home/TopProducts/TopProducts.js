@@ -6,7 +6,7 @@ import Service from '../../Service/Service';
 const TopProducts = () => {
     const [cars, setCars] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/cars')
+        fetch('https://dry-stream-77696.herokuapp.com/cars')
             .then(res => res.json())
             .then(data => setCars(data.slice(0, 6)))
     }, [])
