@@ -11,7 +11,7 @@ import { FacebookShareButton, FacebookIcon, TwitterShareButton, TwitterIcon, Wha
 
 const TopReviews = () => {
     const [reviews, setReviews] = useState([]);
-    const shareUrl = 'http://localhost:5000';
+    const shareUrl = 'https://dry-stream-77696.herokuapp.com/';
 
     useEffect(() => {
         fetch('https://dry-stream-77696.herokuapp.com/reviews')
