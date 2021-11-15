@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# ELECTRO BOOM CAR STORE - An Online-Booking-based Electric vehicles ordering website using react router,Material UI, mongodb and firebase with server side api
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+For explore this website, [Click Here]().
 
-## Available Scripts
+## Available Feature and Functionality
 
-In the project directory, you can run:
+In this project, you can run a service based website of electric cars browse and orders. You can explore and select your preferable car and book through online :
 
-### `yarn start`
+### `Used Libraries and Technology`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Used `react router`
+2. Used `Context Api`
+3. Used `font awesome` for icons
+4. used `material UI` as css framework.
+5. Used `Google Firebase` for login and sign up.
+6. Used `MongoDb` for Database.
+7. Used `React-server`
+8. Used `JWT` for secure admin
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+### `Login and Sign up`
+1. User can create new account using valid email and password.
+2. User can logged In with existing Google account.
+3. Can easily switch between login and sign up page.
+### `Navbar and Footer`
+1. Have resourceful and functional Navbar and footer.
+2. User can go to Home page by clicking on Brand name or Home
+3. User without login and registration can access Home, explore cars, login.
+4. Ordering car, Dashboard are `Private route`.
+5. Customer can view their orders, can give review.
+6. `Admin` can access all orders, add an admin, manage services, add a service.
+7. After login user can see `Logout` and `user name and photo` instead of login.
+8. Navbar is responsive with toggle for mobile devices.
+### `Home`
+1. Home has carousal slider.
+2. By clicking Buy now, user can order after login.
+3. Home has featured cars and reviews.
+4. User can go to respective route by clicking more.
+5. Has google map location.
+### `Private Route`
+1. User can not access checkout, my orders, reviews of dashboard without login.
+2. Only Registered and login user can access all the functionality
+### `Admin Route`
+1. Admin can access all dashboard menu.
+2. Can add an admin.
+3. Can delete orders.
+4. Can add a car service.
+5. Can remove a car service
+### `MongoDb database and Heroku server`
+1. All the inserted and removed data are functional direct from mongodb database.
+2. Server is deployed to heroku so that from any where it can serve.
+!!!Enjoy!!!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
